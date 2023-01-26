@@ -7,10 +7,16 @@ using System.Threading.Tasks;
 
 namespace Personenliste2
 {
+    /// <summary>
+    /// Creates a person
+    /// </summary>
     public class Person
     {
+        /// <summary>
+        /// Sets and gets the firstname
+        /// </summary>
         private string _vorname = "";
-
+        
         public string Vorname
         {
             get { return _vorname; }
@@ -22,6 +28,9 @@ namespace Personenliste2
                 }
             }
         }
+        /// <summary>
+        /// sets and gets the surname
+        /// </summary>
         private string _nachname = "";
 
         public string Nachname
@@ -32,6 +41,9 @@ namespace Personenliste2
                _nachname = value;
             }
         }
+        /// <summary>
+        /// gets and sets the sex
+        /// </summary>
         private string _geschlecht = "";
 
         public string Geschlecht
@@ -47,7 +59,12 @@ namespace Personenliste2
             }
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="vorname">sets the firstname of the person</param>
+        /// <param name="nachname">sets the surname of the person</param>
+        /// <param name="geschlecht">sets the sex of the person</param>
         public Person(string vorname, string nachname, string geschlecht)
         {
             this.Nachname = nachname;
