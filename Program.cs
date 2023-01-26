@@ -16,3 +16,4 @@ for(int i = 0; i < Personen.Count; i++)
         Console.WriteLine(Personen[i].Geschlecht);
     }
 }
+Person p5 = new Person("Max", "Lackner", "m");
